@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Glucose Chart App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
+This project is a web application developed to visualize Continuous Glucose Monitoring (CGM) data obtained from the LibreView API. The objective of this project is to provide a simple interface where users can log in to retrieve and view their CGM data. More features will be added in the future.
 
-## Available Scripts
+## Technologies Used
+- **React**: Frontend library for building user interfaces.
+- **Chart.js**: Library for rendering interactive line charts.
+- **LibreView API**: Source for fetching CGM data via HTTP requests
+- **chartjs-adapter-date-fns**: Adapter for integrating Chart.js with date-fns library.
 
-In the project directory, you can run:
+## Skills Demonstrated
+- **Frontend Development**: Developed the frontend of the application using React, including components for user authentication and data visualization.
+- **API Integration**: Integrated LibreView API securely.
+- **Data Visualization**: Implemented interactive charts with Chart.js.
+- **Error Handling**: Implemented error handling mechanisms.
 
-### `npm start`
+## Features
+- **User Authentication**: The user can log in to the application using their Libre credentials.
+- **Data Visualization**: Once authenticated, the application requests CGM data from the LibreView API and displays it as an interactive line chart.
+- **Error Handling**: The application handles various error scenarios during authentication and data retrieval, displaying appropriate error messages.
+- **Responsive Design**: The user interface is designed to be responsive and adapts to different screen sizes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Current Usage
+1. **Login**: Enter your Libre username and password in the provided fields and click on the "Login" button.
+2. **View Graph**: The application will fetch and display your CGM data as an interactive graph, as well as your average glucose level for the last 12 hours.
+3. **Interact with Graph**: You can interact with the graph by hovering over data points to view glucose levels at specific times.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
+To run the Glucose Chart App locally:
+1. Clone this repository to your local machine.
+2. Install dependencies using `npm install`.
+3. Start the development server using `npm start`.
+4. Access the application in your browser at `http://localhost:3000`.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Credits
+- The [LibreView API documentation](https://libreview-unofficial.stoplight.io/docs/libreview-unofficial/branches/main/5e6m44bnx0m4p-libre-view-unofficial) provided guidance for integrating CGM data retrieval into the application.
+- This [GitHub Gist by khskekec](https://gist.github.com/khskekec/6c13ba01b10d3018d816706a32ae8ab2) was helpful in understanding the LibreView API integration.
